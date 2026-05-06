@@ -14,9 +14,9 @@ programa {
       } enquanto (nota < 0 ou nota > 10)
 
       se ( nota < 7 ) {
-        contadorAbaixoMedia ++
+        contadorAbaixoMedia = contadorAbaixoMedia + 1
       } senao {
-        contadorAcimaMedia++
+        contadorAcimaMedia = contadorAcimaMedia + 1
       }
      totalNotas = totalNotas + nota
     }
@@ -27,8 +27,9 @@ programa {
     }senao {
       escreva("\n\nAluno ", nomeAluno, "foi reprovado com media ", media, "\n" )
     }
-    escreva("Trimestes na media: ", contadorAbaixoMedia, "\n")
-    escreva("Trimestes abaixo da media: ", contadorAbaixoMedia)
+    escreva("Trimestes na media: ", contadorAcimaMedia , "\n")
+    escreva("Trimestes abaixo da media: ", contadorAbaixoMedia, "\n")
     }
   }
+
 
