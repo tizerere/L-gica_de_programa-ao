@@ -9,7 +9,7 @@ programa {
 
     para(inteiro i = 1; i <= 3; i++) {
       faca{
-        escreva("Nome do ", i, "º trimeste :")
+        escreva("Nota do ", i, "º trimeste :")
         leia(nota)
       } enquanto (nota < 0 ou nota > 10)
 
